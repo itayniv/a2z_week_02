@@ -106,6 +106,7 @@ function mixedContent(){
 
   let finalPar = firstLetterUpper+combinedNameStringLowercaseWithout;
   document.getElementById("mixedHeader").innerHTML = firstLetterUpper+combinedNameStringLowercaseWithout;
+  // console.log("finalPar", finalPar);
 
 
 //mix two topics
@@ -129,7 +130,7 @@ function mixedContent(){
   //remove first letter
   let combinedStringMinLetter = combinedString.substr(1);
   let firstLetterParagraph = combinedString.charAt(0); // alerts 's'
-  let firstLetterParagraphUpper = firstLetter.toUpperCase();
+  let firstLetterParagraphUpper = firstLetter.toLowerCase();
 
   let newParagraphUpperLetter = firstLetterParagraphUpper + combinedStringMinLetter;
 
@@ -139,5 +140,5 @@ function mixedContent(){
   newParagraphUpperLetter = combinedNoComma.replace(/#|,/g,' ');
   // let combinedlowercase = combinedNoComma.toLowerCase();
 
-  document.getElementById("mixedAnswer").innerHTML= newParagraphUpperLetter + ".";
+  document.getElementById("mixedAnswer").innerHTML= "A " + finalPar + " " + "is " + newParagraphUpperLetter + ".";
 }
